@@ -20,8 +20,9 @@ function PostTemplate(props) {
   let { title, date, content } = props
   return (
     <section className="article markdown-body">
-      <a href="/">back</a>
+      <a className="article__back-link" href="/">👈 &nbsp;Back</a>
       <h1>{title}</h1>
+      <date className="article__date">Published: {date}</date>
       <ReactMarkdown components={markdownComponents} remarkPlugins={[[gfm]]}>
         {content}
       </ReactMarkdown>

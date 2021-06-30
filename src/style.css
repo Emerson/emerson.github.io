@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, div {
+h1, h2, h3, h4, h5, h6, p, div, li {
   font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 }
 
@@ -20,6 +20,18 @@ pre, code {
   min-width: 200px;
   margin: 0 auto;
   padding: 45px;
+}
+
+.article__back-link {
+  font-size: 20px;
+}
+
+.article__date {
+  font-size: 15px;
+  color: #999;
+  font-style: italic;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .article blockquote {
@@ -73,7 +85,8 @@ pre, code {
   margin-top: 0px;
 }
 
-.profile__content p {
+.profile__content p,
+.profile__content li {
   line-height: 150%;
   font-size: 20px;
 }

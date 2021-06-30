@@ -14,12 +14,12 @@ Over the past year or so, the front end team at [iManage Closing Folders](https:
 
 ### What Are the Benefits of State Machines?
 
-* It forces us to reconcile component design upfront
+* It forces us to reconcile component design upfront by considering all the states we want our component to handle
 * It’s a framework agnostic way of defining presentational state
 * It’s easy to unit test
 * You can generate state diagrams from the code you write
 * Template code can be greatly simplified
-* It eliminates emergent states in favour of explicit states
+* **It eliminates emergent states in favour of explicit states**; as an example, if you have two boolean states on a component `isSaving` and `isError`, you actually have four states to consider.
 
 ### What Are the Drawbacks?
 
@@ -29,7 +29,7 @@ Over the past year or so, the front end team at [iManage Closing Folders](https:
  
 ### The Plan
 
-This is a contrived example, but I think it goes far enough to demonstrate the basics of using XState with EmberJS. We’re going to look at how we can use XState and Ember to implement a _(very)_ basic signup form.
+This is a contrived example, but I think it goes far enough to demonstrate the basics of using XState with EmberJS. We’re going to look at how we can use XState and Ember to implement a _(very)_ basic signup form. This particular example could be implemented fairly easily using [ember-concurrency](http://ember-concurrency.com/), but in the wild our components are often much more complex and can justify the use of state machines.
 
 I won’t be explaining XState in great detail, for that I would suggest watching the [free video series on egghead.io](https://egghead.io/courses/introduction-to-state-machines-using-xstate). Instead, this article will introduce some basic concepts and demonstrate how we develop XState powered components in Ember.
 
@@ -380,4 +380,4 @@ Alright, so let's check out the component template. It’s pretty clean and easy
 {{/if}}
 ```
 
-I hope this has been a somewhat compelling introduction to using XState and EmberJS. If you have any questions or comments feel free to reach out on [Twitter](https://twitter.com/emerson_lackey) or on the EmberJS Discord. If this is the type of thing that gets you fired up, please come work with us at iManage, we're hiring!
+I hope this has been a somewhat compelling introduction to using XState and EmberJS. If you have any questions or comments feel free to reach out on [Twitter](https://twitter.com/emerson_lackey) or on the [EmberJS Discord](https://discord.com/invite/emberjs). If this is the type of thing that gets you fired up, please come work with us at iManage, [we're hiring](https://imanage.com/about/careers/#jobs)!
