@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "publish": "next build && next export && mv ./out ../docs",
+    "publish": "rm -Rf ../docs && next build && next export && touch ./out/.nojekyll && mv ./out ../docs",
     "start": "next start"
   },
   "repository": {
