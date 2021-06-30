@@ -8,7 +8,7 @@ function Homepage() {
         <img src="/profile.jpg" />
       </div>
 
-      <div class="profile__content">
+      <div className="profile__content">
         <h1>Howdy! 👋</h1>
         <p>
           My name is <strong>Emerson Lackey</strong> and I'm a Director of Engineering at <a href="https://www.closingfolders.com">iManage Closing Folders</a>.
