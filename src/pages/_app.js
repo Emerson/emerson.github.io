@@ -1,4 +1,3 @@
-// import "../node_modules/markdown-splendor/css/splendor.css"
 import "../node_modules/github-markdown-css/github-markdown.css"
 import "../style.css"
 

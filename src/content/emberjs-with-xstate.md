@@ -174,7 +174,7 @@ idle: {
 
 ### Saving the User (well… faking it anyway)
 
-There are times when you may want a transition to be contingent on the results of an async operation rather than explicitly sending events to your machine. In our example, when the form is submitted we would likely hit an API and depending the result, transition to either the `success` or `error` state.
+There are times when you may want a transition to be contingent on the results of an async operation rather than explicitly sending events to your machine. In our example, when the form is submitted we would likely hit an API and depending on the result, transition to either the `success` or `error` state.
 
 To accomplish this we can use the [`invoke` property](https://xstate.js.org/docs/guides/communication.html) when defining our `saving` state. There is a lot to know about `invoke`, but in its most simple form it allows you to register a callback that returns a promise. In our case if the promise is `resolved` we want to transition to the `success` state, and if it’s `rejected` we want to transition to the `error` state.
 
