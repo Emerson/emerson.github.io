@@ -1,11 +1,18 @@
 * {
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
   font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 }
 
 a, a:visited, a:active {
   text-decoration: none;
   color: #0366d6;
+}
+
+pre, code {
+  font-family: "Fira Mono", Menlo, Monaco, "Lucida Console", "Courier New", Courier, monospace !important;
 }
 
 .article {
