@@ -12,6 +12,8 @@ date: "2021-06-09"
 
 Over the past year or so, the front end team at [iManage Closing Folders](https://www.closingfolders.com) has been experimenting with state machines and EmberJS. We've been pretty happy with the resulting code and I anticipate that we'll continue to use state machines moving forward. We still have a lot to learn about [XState](https://xstate.js.org/) itself _(it's a huge project)_, but I think we have enough knowledge to share some basics.
 
+_**Heads Up**: if you're interested in a deeper integration between EmberJS and XState I would suggest checking out [ember-statecharts](https://ember-statecharts.com). We specifically wanted to avoid adding more dependencies to our projects, but ember-statecharts looks great._
+
 ### What Are the Benefits of State Machines?
 
 * It forces us to reconcile component design upfront by considering all the states we want our component to handle

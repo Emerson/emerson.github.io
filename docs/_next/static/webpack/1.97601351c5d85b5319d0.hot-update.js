@@ -1,4 +1,4 @@
-(window["webpackJsonp_N_E"] = window["webpackJsonp_N_E"] || []).push([[1],{
+webpackHotUpdate_N_E(1,{
 
 /***/ "./content/emberjs-with-xstate.md":
 /*!****************************************!*\
@@ -12,4 +12,4 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ })
 
-}]);
+})
